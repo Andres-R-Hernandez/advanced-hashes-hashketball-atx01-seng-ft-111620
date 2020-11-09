@@ -190,6 +190,7 @@ end
 
 def big_shoe_rebounds
   rebounds_from_big_shoe = 0
+  biggest_shoe = 0
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
