@@ -238,6 +238,17 @@ def winning_team
 end
 
 def player_with_longest_name
+  long_name_length = 0
+  mvp = ""
+  game_hash.each do |host, team_attributes|
+    team_attributes[:players].each do |player_stats|
+      if player_stats[:name].length > long_name_length
+        long_name_length = player_stats[:points].length
+        mvp = player_stats[:player_name]
+      end
+    end
+  end
+  mvp
 end
 
 def long_name_steals_a_ton
