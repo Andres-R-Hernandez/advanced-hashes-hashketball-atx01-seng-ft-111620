@@ -231,9 +231,9 @@ def winning_team
   end
 
   if home_points > away_points
-    "#{game_hash[:home][:team_name]} is the winning team!"
+    "#{game_hash[:home][:team_name]} is the winning team! Score: #{home_points} to #{away_points}"
   elsif home_points < away_points
-    "#{game_hash[:away][:team_name]} is the winning team!"
+    "#{game_hash[:away][:team_name]} is the winning team! Score: #{home_points} to #{away_points}"
   else
     "Tie!"
   end
