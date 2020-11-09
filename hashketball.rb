@@ -252,7 +252,17 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-  if player_with_longest_name == most_points_scored
+  most_steals = 0
+  thief = ""
+  game_hash.each do |host, team_attributes|
+    team_attributes[:players].each do |player_stats|
+      if player_stats[:points] > most_points
+        most_points = player_stats[:points]
+        mvp = player_stats[:player_name]
+      end
+    end
+  end
+  if player_with_longest_name == thief
     "The player with the longest name, #{player_with_longest_name}, scored the most points!"
   else
     "The player with the longest name, #{long_name_player}, did not score the most points."
