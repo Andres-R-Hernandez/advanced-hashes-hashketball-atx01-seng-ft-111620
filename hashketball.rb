@@ -166,7 +166,12 @@ def team_names
   teams
 end
 
-def player_numbers
+def player_numbers(team_name)
+  jersey_numbers = []
+  game_hash.each do |host, team_attributes|
+    teams << team_attributes[:team_name]
+  end
+  jersey_numbers
 end
 
 def player_stats
