@@ -213,7 +213,7 @@ def most_points_scored
       end
     end
   end
-  most_points
+  mvp
 end
 
 def winning_team
