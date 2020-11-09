@@ -228,7 +228,7 @@ def winning_team
     "#{game_hash[:away][:team_name]} is the winning team!"
   else
     "Tie!"
-
+  end
 end
 
 def player_with_longest_name
