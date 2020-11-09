@@ -159,6 +159,11 @@ def team_colors(team_name)
 end
 
 def team_names
+
+  game_hash.each do |host, team_attributes|
+
+  end
+  teams
 end
 
 def player_numbers
