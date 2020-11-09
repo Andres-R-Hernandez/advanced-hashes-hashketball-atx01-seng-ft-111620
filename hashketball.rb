@@ -220,7 +220,14 @@ def winning_team
   home_points = 0
   away_points = 0
 
-
+  game_hash.each do |host, team_attributes|
+    team_attributes[:players].each do |player_stats|
+      if player_stats[:points] > most_points
+        most_points = player_stats[:points]
+        mvp = player_stats[:player_name]
+      end
+    end
+  end
 
   if home_points > away_points
     "#{game_hash[:home][:team_name]} is the winning team!"
