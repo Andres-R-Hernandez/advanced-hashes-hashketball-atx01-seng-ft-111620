@@ -225,7 +225,7 @@ def winning_team
       if host = :home
         home_points += player_stats[:points]
       elsif host = :away
-        home_points += player_stats[:points]
+        away_points += player_stats[:points]
       end
     end
   end
