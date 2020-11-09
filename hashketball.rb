@@ -189,4 +189,12 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  rebounds_from_big_shoe = 0
+  game_hash.each do |host, team_attributes|
+    team_attributes[:players].each do |player_stats|
+      if player_stats[:player_name] == player_name
+        return player_stats
+      end
+    end
+  end
 end
