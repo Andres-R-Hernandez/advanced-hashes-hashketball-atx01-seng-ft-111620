@@ -222,9 +222,10 @@ def winning_team
 
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
-      if player_stats[:points] > most_points
-        most_points = player_stats[:points]
-        mvp = player_stats[:player_name]
+      if host = :home
+          home_points += player_stats[:points]
+      elsif host = :away
+
       end
     end
   end
