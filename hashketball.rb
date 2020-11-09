@@ -223,9 +223,9 @@ def winning_team
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
       if host = :home
-          home_points += player_stats[:points]
+        home_points += player_stats[:points]
       elsif host = :away
-
+        home_points += player_stats[:points]
       end
     end
   end
