@@ -171,7 +171,7 @@ def player_numbers(team_name)
   game_hash.each do |host, team_attributes|
     if team_attributes[:team_name] == team_name
       team_attributes[:players].each do |player_stats|
-        jersey_numbers <<
+        jersey_numbers << player_stats[:number]
       end
     end
   end
