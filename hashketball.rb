@@ -243,7 +243,7 @@ def player_with_longest_name
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
       if player_stats[:name].length > long_name_length
-        long_name_length = player_stats[:points].length
+        long_name_length = player_stats[:name].length
         long_name_player = player_stats[:player_name]
       end
     end
