@@ -267,5 +267,5 @@ def long_name_steals_a_ton
   else
     puts "The player with the longest name, #{long_name_player}, did not have the most steals."
   end
-  player_with_longest_name == most_points_scored
+  player_with_longest_name == thief
 end
