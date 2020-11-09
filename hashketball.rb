@@ -211,7 +211,8 @@ def most_points_scored
       end
     end
   end
-  p mvp
+  puts "#{mvp} scored the most points, with #{most_points} points!"
+  mvp
 end
 
 def winning_team
