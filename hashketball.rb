@@ -131,7 +131,7 @@ end
 def num_points_scored(player_name)
   data = game_hash
   data.each do |host|
-    host[1][:players].each do |player_stats|
+    host[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
         10
       end
