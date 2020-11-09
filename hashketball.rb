@@ -178,7 +178,14 @@ def player_numbers(team_name)
   jersey_numbers
 end
 
-def player_stats
+def player_stats(player_name)
+  game_hash.each do |host, team_attributes|
+    team_attributes[:players].each do |player_stats|
+      if player_stats[:player_name] == player_name
+        return player_stats
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds
