@@ -135,7 +135,7 @@ def num_points_scored(player_name)
     team_attributes[:players].each do |player_stats|
 #=begin
       if player_stats[:player_name] == player_name
-        p player_stats[:points]
+        return player_stats[:points]
       end
 #=end
     end
