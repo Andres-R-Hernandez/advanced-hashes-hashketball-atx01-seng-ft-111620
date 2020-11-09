@@ -131,12 +131,14 @@ end
 def num_points_scored(player_name)
   game_hash.each do |host|
     p host
+=begin
     host[:players].each do |player_stats|
       p player_stats
       if player_stats[:player_name] == player_name
         10
       end
     end
+=end
   end
 end
 
