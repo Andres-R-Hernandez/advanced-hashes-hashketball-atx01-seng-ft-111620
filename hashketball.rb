@@ -131,7 +131,6 @@ end
 # Write code here
 
 def num_points_scored(player_name)
-  count = 0
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
