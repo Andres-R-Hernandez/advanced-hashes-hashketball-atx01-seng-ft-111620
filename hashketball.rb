@@ -223,7 +223,12 @@ def winning_team
 
 
   if home_points > away_points
-    game_hash[:home][:team_name]
+    "#{game_hash[:home][:team_name]} is the winning team!"
+  elsif home_points < away_points
+    "#{game_hash[:away][:team_name]} is the winning team!"
+  else
+    "Tie!"
+
 end
 
 def player_with_longest_name
