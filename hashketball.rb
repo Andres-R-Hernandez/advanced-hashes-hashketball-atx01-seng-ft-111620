@@ -128,4 +128,3 @@ end
 
 # Write code here
 
-pp game_hash
