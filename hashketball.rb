@@ -132,6 +132,7 @@ end
 
 def num_points_scored(player_name)
   game_hash.each do |host|
+    binding.pry
     host[:players].each do |player_stats|
       if player_stats[:player_name] == player_name
         10
