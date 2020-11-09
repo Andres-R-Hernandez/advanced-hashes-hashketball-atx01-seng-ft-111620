@@ -248,7 +248,8 @@ def player_with_longest_name
       end
     end
   end
-  p long_name_player
+  puts "#{long_name_player} has the longest name! Wow!"
+  long_name_player
 end
 
 def long_name_steals_a_ton
