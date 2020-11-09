@@ -219,7 +219,6 @@ end
 def winning_team
   home_points = 0
   away_points = 0
-
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
       if host = :home
@@ -229,7 +228,6 @@ def winning_team
       end
     end
   end
-
   if home_points > away_points
     "#{game_hash[:home][:team_name]} is the winning team! Score: #{home_points} to #{away_points}"
   elsif home_points < away_points
