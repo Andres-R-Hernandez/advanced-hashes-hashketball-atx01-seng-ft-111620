@@ -264,8 +264,9 @@ def long_name_steals_a_ton
   end
   if player_with_longest_name == thief
     puts "The player with the longest name, #{player_with_longest_name}, had the most steals!"
+    return true
   else
     puts "The player with the longest name, #{long_name_player}, did not have the most steals."
+    return false
   end
-  player_with_longest_name == thief
 end
