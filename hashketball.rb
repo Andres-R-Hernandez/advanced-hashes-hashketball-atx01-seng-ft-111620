@@ -207,7 +207,7 @@ def most_points_scored
   mvp = ""
   game_hash.each do |host, team_attributes|
     team_attributes[:players].each do |player_stats|
-      if player_stats[:shoe] > biggest_shoe
+      if player_stats[:points] > most_points
         biggest_shoe = player_stats[:shoe]
         rebounds_from_big_shoe = player_stats[:rebounds]
       end
