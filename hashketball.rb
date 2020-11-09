@@ -133,7 +133,7 @@ end
 def num_points_scored(player_name)
   count = 0
   game_hash.each do |host|
-    p count
+    puts count
     count += 1
 =begin
     host[1][:players].each do |player_stats|
