@@ -253,8 +253,9 @@ end
 
 def long_name_steals_a_ton
   if player_with_longest_name == most_points_scored
-    "The player with the longest name, #{long_name_player}, scored the most points!"
+    "The player with the longest name, #{player_with_longest_name}, scored the most points!"
   else
     "The player with the longest name, #{long_name_player}, scored the most points!"
   end
+  player_with_longest_name == most_points_scored
 end
